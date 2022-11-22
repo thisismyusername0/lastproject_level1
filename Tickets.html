@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Tickets.css">
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li>
+                    <a class="links" href="Home.html">Home</a>
+                </li>
+                <li>
+                    <a class="links" href="AboutUs.html">Tickets</a>
+                </li>
+                <li>
+                    <a class="links" href="Location.html">Location</a>
+                </li>
+            </ul>
+        </header>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <th> </th>
+                <th>Child Tickets</th>
+                <th>Adult Tickets</th>
+                <th>Senior Tickets</th>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <td>₹150</td>
+                <td>₹215</td>
+                <td>₹100</td>
+            </tr>
+        </table>
+        <form name="myForm" onsubmit="return submitfunction()">
+            <label>First Name</label>
+            <input type="text">
+        <br>
+            <label>Last Name</label>
+            <input type="text">
+        <br>
+            <label>Email</label>
+            <input type="email">
+        <br>
+            <label>Mobile Number</label>
+            <input type="number">
+        <br>
+            <label>Child Tickets</label>
+            <input type="number" id="child">
+        <br>
+            <label>Adult Tickets</label>
+            <input type="number" id="adult">
+        <br>
+            <label>Senior Tickets</label>
+            <input type="number" id="senior">
+        <br>
+            <input type="submit">
+        </form>
+        <script>
+            function submitfunction(){
+                var a = document.forms["myForm"]["child"].value;
+                var b = document.forms["myForm"]["adult"].value;
+                var c = document.forms["myForm"]["senior"].value;
+                alert("You have to pay ₹"+(a*150+b*215+c*100));
+            }
+        </script>
+    </body>
+</html>

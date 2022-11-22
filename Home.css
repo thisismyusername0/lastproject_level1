@@ -1,0 +1,25 @@
+#top{
+    background-color:black;
+    color:white;
+}
+.links{
+    color:aqua;
+}
+ul{
+    display:inline-block;
+    text-decoration:none;
+}
+li{
+    display:inline-block;
+    padding-left:50px;
+    padding-right:50px;
+}
+body{
+    text-align:center;
+}
+footer{
+    background-color:white;
+    color:black;
+    text-align:end;
+    margin-bottom:0;
+}
